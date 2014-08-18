@@ -1,3 +1,10 @@
 <h1>New user</h1>
-<%= render 'form' %>
+<%= render 'shared/form' %>
+<%= form_for(@user) do |f| %>
+<%= f.label :name %><br>
+<%= f.text_field :name %>
+<%= f.label :email %><br>
+<%= f.text_field :email %>
+<%= f.submit %>
+<% end %>
 <%= link_to 'Back', users_path %>
