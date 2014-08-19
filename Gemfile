@@ -3,8 +3,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
 
+
 # Use mysql as the database for Active Record
 gem 'mysql2'
+
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -43,6 +47,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+<<<<<<< HEAD
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -52,3 +57,5 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
+=======
+>>>>>>> 513364421fed67e4ba825c68957bea98aa809e00
