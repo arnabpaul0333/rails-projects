@@ -1,17 +1,10 @@
 <%provide(:title, 'Sign up') %>
 <h1>Sign Up</h1>
-<%= render 'shared/form' %>
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@user) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %><br>
-    <%= f.label :email %>
-    <%= f.text_field :email %><br>
-    <%= f.label :password %>
-    <%= f.password_field :password %><br>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %><br>
+    <%= render 'shared/error_messages', object: f.object %>
+    <%= render 'field', f: f %>
     <%= f.submit "Create my account", class: "btn btn-large btn-primary"  %>
     <% end %>
   </div>
