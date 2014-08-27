@@ -59,8 +59,8 @@ p {
   font-weight: bold;
   line-height: 1;
   &:hover {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -82,8 +82,8 @@ footer {
     float: right;
     list-style: none;
     li {
-    float: left;
-    margin-left: 10px;
+      float: left;
+      margin-left: 10px;
     }
   }
 }
