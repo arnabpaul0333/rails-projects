@@ -1,0 +1,6 @@
+<% provide(:title, 'Photo') %>
+<h1>Photos</h1>
+<%= form_for @photo, url: @photo_path, method: "post", html: {multipart: true} do|f| %>
+  <%= f.file_field :image %><br>
+  <%= f.submit "Add" %>
+<% end %>

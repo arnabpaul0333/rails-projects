@@ -1,4 +1,7 @@
 <% provide(:title, @title) %>
+<% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>
+<% end %>
 <div class="row">
   <aside class="span4">
     <section>

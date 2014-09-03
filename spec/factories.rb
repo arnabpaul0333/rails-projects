@@ -14,7 +14,7 @@ FactoryGirl.define do
     content "Lorem ipsum"
     user
   end
-
+  
   factory :relationship do
     user
   end
